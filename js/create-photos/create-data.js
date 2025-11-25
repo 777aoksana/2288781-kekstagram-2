@@ -1,14 +1,12 @@
 import { getDataArrays } from '../data.js';
-import { getRandomElements } from '../utils.js';
 import { generatePhotoId, generatePhotoUrl } from '/js/create-photos/get-id.js';
+import { getRandomInteger, getRandomElements } from '../utils.js';
 import { createComments } from '/js/create-photos/comments-photo.js';
-import { getRandomInteger } from '../utils';
-import { COMMENTS, LIKES } from '/js/create-photos/get-id';
 
 /**
  * Деструктуризация импортированных данных
  */
-const { DESCRIPTIONS, MAX_PHOTOS } = getDataArrays();
+const { DESCRIPTIONS, MAX_PHOTOS, COMMENTS, LIKES } = getDataArrays();
 
 /** Функция для создания объекта с описанием фотографии
   * @param {number} id - идентификатор опубликованной фотографии. Это число от 1 до 25. Идентификаторы не должны повторяться
