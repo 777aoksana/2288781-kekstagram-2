@@ -19,10 +19,10 @@ const { DESCRIPTIONS, MAX_PHOTOS } = getDataArrays();
   * @returns
 */
 const getPhotoUsers = () => ({
-  id : generatePhotoId(),
-  url :`photos/${generatePhotoUrl()}.jpg`,
-  description : `${getRandomElements(DESCRIPTIONS)}`,
-  likes : getRandomInteger(LIKES.MIN, LIKES.MAX),
+  id: generatePhotoId(),
+  url: `photos/${generatePhotoUrl()}.jpg`,
+  description: `${getRandomElements(DESCRIPTIONS)}`,
+  likes: `${getRandomInteger(LIKES.MIN, LIKES.MAX)}`,
   comments: Array.from({length: getRandomInteger(COMMENTS.MIN, COMMENTS.MAX)}, createComments()),
 });
 
