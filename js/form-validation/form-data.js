@@ -11,6 +11,8 @@ const descriptionInput = uploadForm.querySelector('.text__description'); // До
 
 const submitButton = document.querySelector('.img-upload__submit');
 
+const pageBody = document.querySelector('body'); // Тег body страницы
+
 
 // Настройки и сообщения для валидации формы загрузки изображения
 const DATA_FORM_SET = {
@@ -42,6 +44,8 @@ export {
   hashtagsInput,
 
   submitButton,
+
+  pageBody,
 
   DATA_FORM_SET,
   ERROR_MESSAGE

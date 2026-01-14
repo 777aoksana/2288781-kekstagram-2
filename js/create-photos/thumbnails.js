@@ -1,4 +1,6 @@
-import { openModal } from '../rendering-big-photos/modal-window.js';
+import {
+  openModal
+} from '../rendering-big-photos/modal-window.js';
 import {
   pictureTemplate,
   picturesContainer
