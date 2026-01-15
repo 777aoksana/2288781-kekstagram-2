@@ -25,6 +25,7 @@ import {
 
 scaleListener();
 resetScale();
+
 effectCheckedListener();
 resetEffects();
 
